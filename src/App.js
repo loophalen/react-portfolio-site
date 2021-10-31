@@ -7,6 +7,8 @@ import "./App.css";
 
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 class App extends React.Component {
   constructor(props) {
@@ -45,10 +47,10 @@ class App extends React.Component {
                 <Link className="nav-link" to="/">
                   Home
                 </Link>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/about">
                   About
                 </Link>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </Nav>
@@ -65,6 +67,16 @@ class App extends React.Component {
                 text={this.state.home.text}
               />
             )}
+          />
+
+          <Route
+            path="/about"
+            render={() => <AboutPage title={this.state.about.title} />}
+          />
+
+          <Route
+            path="/contact"
+            render={() => <ContactPage title={this.state.contact.title} />}
           />
 
           <Footer />
