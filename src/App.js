@@ -22,8 +22,8 @@ class App extends React.Component {
       ],
       home: {
         title: "Code Austin Code",
-        subTitle: "Austin is learning to code React",
-        text: "Projects below",
+        subTitle: "Austin is learning to code in React",
+        text: "Projects coming soon",
       },
       about: {
         title: "About",
