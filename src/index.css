@@ -50,3 +50,13 @@ code {
   color: black;
   background-color: #ffc600;
 }
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
