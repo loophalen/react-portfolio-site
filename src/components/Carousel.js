@@ -17,24 +17,27 @@ class Carousel extends React.Component {
           id: 0,
           title: "Drew Beskin",
           subTitle: "Website for Drew Beskin",
+          subInfo: "Built using HTML and CSS",
           imgSrc: drewbeskin,
-          link: "https://www.drewbeskin.com/",
+          link: "https://www.drewbeskin.com",
           selected: false,
         },
         {
           id: 1,
           title: "Nicholas Malllis",
           subTitle: "Website for Nicholas Mallis",
+          subInfo: "Built using HTML and CSS",
           imgSrc: nickmallis,
-          link: "https://www.nicholasmallis.com/",
+          link: "https://www.nicholasmallis.com",
           selected: false,
         },
         {
           id: 2,
           title: "Grand Vapids",
           subTitle: "Website for Grand Vapids",
+          subInfo: "Built using HTML and CSS",
           imgSrc: grandvapids,
-          link: "https://grandvapids.com/",
+          link: "https://grandvapids.com",
           selected: false,
         },
       ],
@@ -48,7 +51,7 @@ class Carousel extends React.Component {
 
     items.forEach((item) => {
       if (item.id !== id) {
-        items.selected = false;
+        item.selected = false;
       }
     });
 

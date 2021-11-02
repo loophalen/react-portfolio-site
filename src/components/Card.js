@@ -4,10 +4,7 @@ import CardInfo from "../components/CardInfo";
 
 function Card(props) {
   return (
-    <div
-      className="d-inline-block a-card"
-      onClick={(e) => props.click(props.item)}
-    >
+    <div className="a-card" onClick={(e) => props.click(props.item)}>
       <img
         className="a-card-image"
         src={props.item.imgSrc}
@@ -17,7 +14,8 @@ function Card(props) {
         <CardInfo
           title={props.item.title}
           subTitle={props.item.subTitle}
-          link={props.item.Link}
+          subInfo={props.item.subInfo}
+          link={props.item.link}
         />
       )}
     </div>
